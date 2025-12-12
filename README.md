@@ -8,15 +8,15 @@ This Terraform configuration deploys a complete Coder development environment on
 ┌─────────────────────────────────────────────────────┐
 │                    Default VPC                      │
 │                                                     │
-│  ┌──────────────────┐      ┌──────────────────┐   │
-│  │  Coder Instance  │      │ Postgres Instance│   │
-│  │  (t3.medium)     │─────▶│  (t3.medium)     │   │
-│  │  Port: 7080      │      │  Port: 5432      │   │
-│  │  Public IP       │      │  Public IP       │   │
-│  └──────────────────┘      └──────────────────┘   │
-│         │                          │               │
-│         │ (HTTP/HTTPS)            │ (SSH only)    │
-│         ▼                          ▼               │
+│  ┌──────────────────┐      ┌──────────────────┐     │
+│  │  Coder Instance  │      │ Postgres Instance│     │
+│  │  (t3.medium)     │─────▶│  (t3.medium)     │     │
+│  │  Port: 7080      │      │  Port: 5432      │     │
+│  │  Public IP       │      │  Public IP       │     │
+│  └──────────────────┘      └──────────────────┘     │
+│         │                          │                │
+│         │ (HTTP/HTTPS)             │ (SSH only)     │
+│         ▼                          ▼                │
 └─────────────────────────────────────────────────────┘
          │
          ▼
