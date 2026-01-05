@@ -385,6 +385,8 @@ resource "aws_instance" "coder" {
 
               usermod -aG docker ubuntu || true
 
+              chmod 666 /var/run/docker.sock
+
               # Get the instance's public IP from AWS metadata service
               echo "Fetching instance public IP..."
               PUBLIC_IP=$(curl ifconfig.me)
